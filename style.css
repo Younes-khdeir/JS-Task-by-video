@@ -1,0 +1,38 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.header .logo{
+	width:8.2rem;
+}
+.header{
+	box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+	width: 100%;
+    position: relative;
+    top: 0px;
+}
+
+.header a{	
+	font-size: 1em;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:red;
+}
+.toolbar{
+	margin-left: 140px;
+}
+#video-id::placeholder {  
+    text-align: center; 
+} 
+
+#body-video{  
+	height: 25rem; 
+	width: 48rem;
+} 
+.body{
+	margin-left: 140px;
+}
+

@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Youtube</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="style.css">
+	</head>	
+	<body>
+		<div class="all-element">
+			<header class="header navbar-light bg-white border-top mb-3">
+				<div class="container-fliud mx-5">
+					<nav class="navbar navbar-expand-md row mx-5 align-items-center">
+						<a class="navbar-brand" href="#"><img class="logo mb-0" src="images\logo.png"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse d-none d-xl-block justify-content-end" id="collapsibleNavbar">	
+							<ul class="navbar-nav">
+								<li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+								<li class="nav-item"><a class="nav-link" href="#contact" class="nav-link">Contact</a></li>
+							</ul>
+						</div>
+					</nav>	
+				</div>
+			</header>
+
+			<form id="search-form">
+				<div class="container">
+					<div class="row toolbar justify-contact-center my-4" for="video-id">
+						<div id="search-id" class="col-8">
+							<input id="video-id" type="text" placeholder="Enter youtube id" class="rounded form-control btn-md "></input>
+						</div>
+						<div id="search-bottom" class="col">
+							<button class="btn btn-danger btn-md rounded btn-md" type="button" onclick="WatchVideo()"  >Watch Video</button>
+						</div>
+					</div>
+					<div class="row body justify-contact-center my-4">
+						<div class="col">
+							<iframe id="body-video" src="https://www.youtube.com/embed/nsxSe4cCwPo?controls=1&autoplay=1"></iframe>
+						</div>
+					</div>
+				</div>	
+			</form>
+		</div>
+		
+	</body>
+	<script>			
+		function WatchVideo(){	
+			var url       = "https://www.youtube.com/embed/";
+			var idVideo   = document.getElementById('video-id').value;
+			var bodyVideo = document.getElementById('body-video'); 	
+			bodyVideo.src=url+idVideo;
+		}
+	
+	</script>
+</html>
+
+<!--
+<script src="javascript.js">
+
+
+
+
+-->
